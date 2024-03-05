@@ -47,10 +47,13 @@ void Neyronnaya_sety::
 {
   //
   QString path =
-      "/home/viktor/my_projects_qt_2/"
-      "build-zapolnenie_sinapsov_sluchajnymi_nachalnymi_soprotivleniyami_2-"
-      "Desktop_Qt_5_12_12_GCC_64bit-Debug/sinapsi.txt"; // Файл с начальными
+//      "/home/viktor/my_projects_qt_2/"
+//      "build-zapolnenie_sinapsov_sluchajnymi_nachalnymi_soprotivleniyami_2-"
+//      "Desktop_Qt_5_12_12_GCC_64bit-Debug/sinapsi.txt"; // Файл с начальными
                                                         // зарядами нейронов//
+      "/home/viktor/my_projects_qt_2/Sgenerirovannye_fayly/1-1/sinapsi.txt";
+  
+  
   // проверка существования файла:
   QFileInfo check_file(path);
   // проверьте, существует ли файл,
@@ -119,9 +122,14 @@ void Neyronnaya_sety::
     // Создаем объект класса QFile и связываем его с указанным именем
     //файла
     QString filename =
-        "/home/viktor/my_projects_qt_2/"
-        "build-zapolnenie_sinapsov_sluchajnymi_nachalnymi_soprotivleniyami_2-"
-        "Desktop_Qt_5_12_12_GCC_64bit-Debug/sinapsi.txt";
+        
+//        "/home/viktor/my_projects_qt_2/"
+//        "build-zapolnenie_sinapsov_sluchajnymi_nachalnymi_soprotivleniyami_2-"
+//        "Desktop_Qt_5_12_12_GCC_64bit-Debug/sinapsi.txt"
+        
+          "/home/viktor/my_projects_qt_2/Sgenerirovannye_fayly/1-1/sinapsi.txt"
+        
+        ;
     QFile file(filename);
     // Открываем файл в режиме "Только для записи"
     if (file.open(QIODevice::WriteOnly)) { // Если открыли файл начало
@@ -151,5 +159,5 @@ void Neyronnaya_sety::
   }
   //
   // Звук:
-  QProcess().execute("/home/tsvigo/zvuk.sh");
+  QProcess().execute("/home/viktor/my_scripts_2/zvuk.sh");
 } // Конец функции
