@@ -1,0 +1,1 @@
+# zapolnenie_sinapsov_sluchajnymi_nachalnymi_soprotivleniyami_2
